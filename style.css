@@ -3,18 +3,11 @@
   top: 40px;
   right: 40px;
   font-size: 40px;
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 50%;
-  border: 2px solid black;
-  width: 50px;
-  height: 50px;
-  text-align: center;
   line-height: 50px;
   transition: 0.5s linear;
 }
 .burger:hover {
   cursor: pointer;
-  transform: rotate(405deg);
 }
 aside {
   position: absolute;
@@ -22,9 +15,27 @@ aside {
   bottom: 0;
   left: -300px;
   width: 300px;
-  background-color: black;
+  background-color: yellow;
   transition: 0.5s linear;
 }
-.burger:hover + aside {
+
+.fas {
+  display: none;
+  color: red;
+}
+ul {
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+li {
+  display: inline-block;
+  margin: 20px;
+}
+i.show {
+  display: block;
+}
+
+aside.show {
   left: 0;
 }
